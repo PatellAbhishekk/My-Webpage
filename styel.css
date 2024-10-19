@@ -1,0 +1,96 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root */
+:root {
+  /* background color */
+  --first-clr: #4458dc;
+  --second-clr: #854fee;
+  --bg-white: #fff;
+  --bg-light: #faf8ff;
+  --bg-black: #000;
+  --bg-gray: #eee;
+  --gredient: linear-gradient(
+    109.6deg,
+    rgb(0, 0, 0) 11.2%,
+    rgb(11, 132, 145) 91.1%
+  );
+
+  /* Text Color */
+  --first-txt: #4458dc;
+  --second-txt: #854fee;
+  --txt-white: #fff;
+  --txt-black: #000;
+  --txt-gray: #777;
+
+  /* Font Family */
+  --first-fnt: "Playwrite DE Grund", serif;
+  --second-fnt: "Robot", sans-serif;
+}
+
+body {
+  font-family: var(--second-fnt);
+  width: 100%;
+  background-image: url();
+  background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+}
+
+/* custom CSS Bar */
+::-webkit-scrollbar {
+  width: 0.2rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-gray);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--first-clr);
+}
+section {
+  padding: 5rem 0;
+}
+.main-btn {
+  display: inline-block;
+  font-family: var(--first-fnt);
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 2.875rem;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.625rem 1.875rem rgb(118 85 225 / 30%);
+  border: double 0.125rem transparent;
+  padding: 0 2.625rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.primary-btn {
+  background-image: var(--gredient);
+  color: var(--txt-white);
+}
+.primary-btn:hover {
+  border-color: var(--second-clr);
+  background: var(--bg-white);
+  color: var(--second-txt);
+  box-shadow: none;
+}
+.secondary-btn {
+  background-image: var(--bg-white);
+  color: var(--second-txt);
+  border-color: var(--second-clr);
+}
+.secondary-btn:hover {
+  border-color: var(--second-clr);
+  background: var(--bg-white);
+  color: var(--second-txt);
+  box-shadow: none;
+}
